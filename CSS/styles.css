@@ -884,8 +884,8 @@ font-weight: normal;
 line-height: 2em;
 border-radius: 1.6875rem;
 transition: all 0.5s ease;
-margin-right: 3rem;
-margin-bottom: -9rem;
+margin-right: auto;
+margin-bottom: auto;
 }
 
 .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
