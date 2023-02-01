@@ -179,18 +179,6 @@ button:focus {
 	/* background: #ff5722; */
 }
 
-.navbar {
-	background: transparent; /*rgba(34, 34, 34, 0.75);*/
-	position: fixed;
-	right: 0;
-	top: 0;
-	height: 50px;
-	display: flex;
-	justify-content: flex-end;
-	padding: 0px 20px;
-	width: 60%;
-	z-index: 99999;
-}
 
 button.contain.open-menu {
 	background: rgba(255, 255, 255, 0.7);
@@ -244,26 +232,7 @@ button.contain.open-menu {
 	/* height: 100%; */
 }
 
-.overlay ul li {
-	vertical-align: middle;
-	display: block;
-	position: relative;
-	opacity: 0;
-	margin-bottom: 35px;
-	font-size: 3em;
-	font-weight: 400;
-	text-transform: uppercase;
-	letter-spacing: 20px;
-}
 
-.overlay ul li a {
-	display: block;
-	position: relative;
-	color: #424242;
-	text-decoration: none;
-	overflow: hidden;
-	transition: all 0.4s;
-}
 
 .overlay ul li a:hover,
 .overlay ul li a:focus,
@@ -324,24 +293,7 @@ main {
 	top: -15px;
 }
 
-.section-1 {
-	color: #222;
-	margin: 0 auto;
-	padding: 200px 4px;
-	text-align: center;
-}
 
-.section-1 h1 {
-    font-family: 'Amatic SC', cursive;
-	margin: 0 auto;
-	letter-spacing: 2px;
-}
-
-.section-1 h2 {
-    font-family: 'Amatic SC', cursive;
-	text-transform: uppercase;
-	font-size: 2em;
-}
 
 /* ==========================================================================
   Portfolio - Section 2
@@ -565,10 +517,6 @@ Grid Layout
 		background: rgba(255, 255, 255, 0.9);
 	}
 
-	.navbar {
-		width: 100%;
-		/* background: rgba(0, 0, 0, 0.8); */
-	}
 
 	#mobile-image {
 		display: block;
@@ -586,29 +534,7 @@ Grid Layout
 		margin: 0 auto;
 	}
 
-	.section-1 {
-		width: 100%;
-		height: auto;
-		margin: 0 auto;
-		padding: 150px 0px;
-	}
 
-	.section-1 h1 {
-		font-size: 3.5em;
-	}
-
-	.section-1 h2 {
-		font-size: 1.8em;
-	}
-
-	.section-1 h3 {
-		font-size: 1.2em;
-	}
-
-	.navbar,
-	.overlay {
-		width: 100%;
-	}
 
 	.link-btn-solid {
 		width: 100%;
@@ -806,14 +732,8 @@ Grid Layout
 		text-shadow: none !important;
 	}
 
-	a,
-	a:visited {
-		text-decoration: underline;
-	}
+	
 
-	a[href]:after {
-		content: " (" attr(href) ")";
-	}
 
 	abbr[title]:after {
 		content: " (" attr(title) ")";
@@ -824,10 +744,6 @@ Grid Layout
      * or use the `javascript:` pseudo protocol
      */
 
-	a[href^="#"]:after,
-	a[href^="javascript:"]:after {
-		content: "";
-	}
 
 	pre {
 		white-space: pre-wrap !important;
@@ -920,6 +836,43 @@ color: #999999;
 background: #030303;
 border-color: #999999;
 }
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: Arial;
+  }
+  
+  /* Style tab links */
+  .tablink {
+	background-color: rgb(0, 0, 0);
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 13px;
+	width: 30%;
+  }
+  
+  .tablink:hover {
+	background-color: #777;
+  }
+  a:-webkit-any-link {
 
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+	color:white
+}
 
-
+ul {
+    display: block;
+	padding: -10%;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
