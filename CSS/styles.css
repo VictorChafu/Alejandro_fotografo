@@ -860,19 +860,8 @@ body, html {
   }
   a:-webkit-any-link {
 
-    color: -webkit-link;
+
     cursor: pointer;
     text-decoration: none;
 	color:white
-}
-
-ul {
-    display: block;
-	padding: -10%;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
 }
