@@ -850,14 +850,12 @@ body, html {
 	border: none;
 	outline: none;
 	cursor: pointer;
-	padding: 14px 16px;
+	padding: 13px 0px;
 	font-size: 13px;
-	width: 30%;
+	width: 20%;
+	align-items: center;
   }
   
-  .tablink:hover {
-	background-color: #777;
-  }
   a:-webkit-any-link {
 
 
@@ -865,3 +863,65 @@ body, html {
     text-decoration: none;
 	color:white
 }
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 50px;
+}
+/*Opiniones*/
+
+.opiniones .caja-contenedor{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.opiniones .caja-contenedor .caja{
+	background: rgb(0, 0, 0);
+	margin: 1rem;
+	padding: 1rem;
+	text-align: center;
+	position: relative;
+	border: rgba(255, 255, 255, 0.2);
+	box-shadow:0 0.5rem 1rem rgb(255 253 253 / 10%); /* sombras*/
+	flex: 1 1 40rem;
+	border-radius: .5rem;
+}
+.opiniones .caja-contenedor .caja .fa-camera-retro{
+	position: absolute;
+	top: 1rem;
+	right: 2rem;
+	font-size: 2rem;
+	color: rgb(146, 146, 146);
+	opacity: .3;
+}
+.opiniones .caja-contenedor .caja .user img {
+	border-radius: 50%;
+	object-fit: cover;
+	height: 8rem;
+	width: 8rem;
+	margin-top:2rem;
+}
+
+.opiniones .caja-contenedor .caja .user h3 {
+	color: white;
+	font-size: 2rem ;
+}
+.opiniones .caja-contenedor .caja .user .stars i {
+	color: white;
+	padding: 0rem; /*el cero para no dejarlo tan separados*/
+}
+.opiniones .caja-contenedor .caja .comentarios {
+	color: white;
+	font-size: 1rem 0;
+	padding: 1rem;
+
+}
+
+
